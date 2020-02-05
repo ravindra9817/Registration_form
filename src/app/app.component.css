@@ -1,0 +1,38 @@
+
+.brl{
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(#2d557d,#9610fd);
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.frm{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  text-align: center;
+}
+.form-ex{
+
+}
+.example-full-width{
+  width: 250px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.example-radio-group {
+padding-left: 20px;
+
+}
+
+.example-radio-button {
+
+}
+.example-radio-group-label{
+  padding-left: 45px;
+  margin-left: 5px;
+}
+

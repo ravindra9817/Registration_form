@@ -1,0 +1,141 @@
+<!--
+<section >
+  <div class="container">
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      placeholder="Example input"
+       ngModel
+      name="Example label"
+    >
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input type="text"
+           class="form-control"
+           id="formGroupExampleInput2"
+           placeholder="Another input"
+           ngModel
+           name="Another label"
+    >
+  </div>
+  <button class="btn btn-primary" type="submit">submit</button>
+</form>
+  </div>
+
+</section>
+-->
+<div class="container brl">
+  <h1><b>BLOCKCHAIN RESEARCH LAB</b></h1>
+</div>
+
+
+<div class="container frm">
+  <h1><b>Registration Form</b></h1>
+
+<!--
+  {{ userprofileForms.value | json}}
+  <hr>
+  {{userModel | json}}
+-->
+
+
+
+  <form class="form-ex" [formGroup]="userprofileForms" (ngSubmit)="onSubmit()" >
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput required type="text" formControlName="name" name="name" autocomplete="off">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>HOSTELER</mat-label>
+      <mat-select formControlName="hosteler">
+        <mat-option value="option0">Yes</mat-option>
+        <mat-option value="option1">No</mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+
+    <BR>
+
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Roll No</mat-label>
+      <input matInput required type="text" formControlName="roll_no" name="roll_no" autocomplete="off">
+     <!-- <div *ngIf="roll_no.invalid && (roll_no.dirty || roll_no.touched)" class="text-danger">
+        <div *ngIf="roll_no.errors.required">
+          **must be of 10 digits
+        </div>
+      </div> -->
+    </mat-form-field>
+
+
+
+    <mat-form-field appearance="outline" class="example-full-width">
+    <mat-label>BRANCH</mat-label>
+    <mat-select formControlName="branch">
+      <mat-option value="option0">CSE</mat-option>
+      <mat-option value="option1">IT</mat-option>
+      <mat-option value="option2">ECE</mat-option>
+      <mat-option value="option3">MECHANICAL</mat-option>
+      <mat-option value="option3">CIVIL</mat-option>
+      <mat-option value="option3">EN/EI</mat-option>
+    </mat-select>
+  </mat-form-field>
+    <br>
+
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput required type="email" formControlName="email" name="email" autocomplete="off">
+    </mat-form-field>
+
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>YEAR</mat-label>
+      <mat-select formControlName="year">
+        <mat-option value="option0">1st</mat-option>
+        <mat-option value="option1">2nd</mat-option>
+        <mat-option value="option2">3rd</mat-option>
+        <mat-option value="option3">4th</mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+    <br>
+
+
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Percentage</mat-label>
+      <input matInput required type="text" formControlName="percentage" name="percentage">
+    </mat-form-field>
+
+
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Attandance</mat-label>
+      <input matInput required type="text" formControlName="attandance" name="attandane">
+    </mat-form-field>
+    <br>
+
+
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Mobile No.</mat-label>
+      <input matInput required type="text" formControlName="mobile_no" name="mobile_no">
+    </mat-form-field>
+    <br>
+
+    <button class="btn btn-primary" [disabled]="!userprofileForms.valid">submit</button>
+
+
+  </form>
+
+</div>
+
